@@ -1,0 +1,23 @@
+{
+  "manifest_version" : 2,
+  "name" : "Incog history keeper",
+  "version" : "0.1",
+  "description" : "Lists the urls of tab opened in incognito. Helpful if you accidentally close a tab in incognito or want to revisit one. You say it defeats the purpose of incognito mode. I say use a side-browser to watch porn.",
+  "icons" : {
+    "16" : "icons/icon16.png",
+    "19" : "icons/icon19.png",
+    "38" : "icons/icon38.png",
+    "48" : "icons/icon48.png",
+    "128" : "icons/icon128.png"
+  },
+  "browser_action" : {
+    //icons
+    "default_title" : "Incog History",
+    "default_popup" : "popup.html"
+  },
+  "background" : {
+    "scripts": ["background.js"],
+    "persistent" : false
+  },
+  "permissions" : ["tabs", "storage"]
+}
