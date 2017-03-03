@@ -3,12 +3,21 @@
   <head>
     <meta charset="utf-8">
     <script src = "popup.js"></script>
+    <style media="screen">
+      p.fixed{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border: 3px solid #73AD21;
+        background-color: #7D2A68;
+        color: #8CA336;
+      }
+    </style>
   </head>
-  <body>
-
-    <h2>Hello</h2>
-
-    <p id="date">default_title</p>
+  <body style="width:350px">
+    <h2 id = "count">Tab History</h2>
+    <div id="listContainer"></div>
+    <p class = "fixed"; id = "linkAdd"></p>
     <button id = "clearList">Clear List</button>
   </body>
 </html>
